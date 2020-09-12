@@ -1,11 +1,10 @@
-class CreateFlights < ActiveRecord::Migration[5.2]
+class CreateFlight1s < ActiveRecord::Migration[5.2]
   def change
-    create_table :flights do |t|
+    create_table :flight1s do |t|
       t.integer :start
       t.integer :finish
-      t.datetime :departure_date
       t.integer :duration
-
+      t.datetime :start_date
       t.timestamps
     end
   end
